@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="upload-page-styles.css" />
+  <title>страница загрузки</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="box1">
+      <h1 onclick="location.href='/'">
+        <span class="tiltup">OMG!</span> image hosting
+      </h1>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="upload">
+          <div>
+      <button id="btnGoToImages" class="hero-button">галерея</button>
+    </div>
+      <h1>👇 загружай изображение 👇</h1>
+
+      <div class="upload-area" id="drop-area" ondrop="handleFiles(event.dataTransfer.files)">
+        <div class="container preview">
+          <p>ты еще ничего не выбрал :(</p>
+        </div>
+
+        <div>
+          <label class="btn btn-primary" for="image_uploads">выбери изображение</label>
+          <input
+            class="input"
+            type="file"
+            id="image_uploads"
+            name="image_uploads"
+            accept=".jpg, .jpeg, .png, .gif"
+            multiple
+            hidden
+          />
+        </div>
+
+        <div class="btn-group-vertical">
+          <button type="button" id="loadBtn" class="btn btn-primary">загрузить файл</button>
+          <button type="button" id="copyBtn" class="btn btn-primary" hidden>ссылка</button>
+          <button type="button" id="downBtn" class="btn btn-primary" hidden>скачать</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Maristan for PythonRush, 2025</p>
+    <p>Kudos and mad respect to my benefactors for making this possible</p>
+  </footer>
+
+  <script src="./upload.js"></script>
+</body>
+</html>
