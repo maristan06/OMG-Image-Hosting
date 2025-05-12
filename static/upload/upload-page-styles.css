@@ -17,7 +17,31 @@
 
 html, body {
     height: 100%;
-    background-image: url("../images.png");
+    background-image: url("../pics/blue_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+  background: #003c8f;
+background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
+}
+
+body {
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+
+main {
+    flex: 1;
+}
+/*html, body {
+    height: 100%;
+    background-image: url("../pics/blue_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,8 +54,8 @@ body {
     color: #333;
     text-align: center;
   position: relative;
-  padding-bottom: 60px; /* leave room for footer */
-}
+  padding-bottom: 60px;
+}*/
 
 .main-header {
     display: flex;
@@ -64,7 +88,7 @@ body {
     padding: 30px;
     border: 2px solid white;
     border-top-left-radius: 50px;
-    background-image: url("../blue.png");
+    background-image: url("../pics/blue_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -205,11 +229,17 @@ body {
 }
 
 .footer {
-  position: absolute;
+    text-align: center;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 10px 0;
+}
+/*.footer {
+
   bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 12px;
   background-color: transparent;
   padding: 10px 0;
-}
+}*/

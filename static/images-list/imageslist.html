@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="list-page-styles.css" />
+
+        <title>Image Hosting</title>
+    </head>
+    <body>
+        <div class="container">
+  <header class="main-header">
+    <div class="box1">
+      <h1 onclick="location.href='/'">
+        <span class="tiltup">OMG!</span> image hosting
+      </h1>
+    </div>
+
+  </header>
+            <h1>Таблица изображений</h1>
+            <div>
+            <div id="imageslist">
+                    <div id="images-placeholder" class="">
+                        <table id="images_table" class="table">
+                            <thead>
+                                <th>Эскиз</th>
+                                <th>Ссылка</th>
+                                <th>Размер (КБ)</th>
+                                <th>Дата загрузки</th>
+                                <th>Удалить</th>
+                            </thead>
+                            <tbody id="imagesTableBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <nav>
+              <ul class="pagination">
+                  <li class="page-item">
+                      <button class="page-link" id="prevPage" disabled aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                      </button>
+                  </li>
+                  <li class="page-item">
+                      <button class="page-link" disabled id="currentPage" aria-label="Next">
+                          1
+                      </button>
+                  </li>
+                  <li class="page-item">
+                      <button class="page-link" id="nextPage" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                      </button>
+                  </li>
+              </ul>
+          </nav>
+          </div>
+
+
+        </div>
+
+        <script src="./imageslist.js"></script>
+    </body>
+  <footer class="footer">
+    <p>Maristan for PythonRush, 2025</p>
+    <p>Kudos and mad respect to my benefactors for making this possible</p>
+  </footer>
+</html>

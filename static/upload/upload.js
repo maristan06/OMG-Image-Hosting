@@ -25,7 +25,7 @@ function updateImagePreview() {
     preview.appendChild(prevDivEl);
 
     let filenamePEl = document.createElement("p");
-    filenamePEl.className = "mb-0";
+//    filenamePEl.className = "mb-0";
     filenamePEl.id = "filename";
 
     let fileSizePEl = document.createElement("p");
