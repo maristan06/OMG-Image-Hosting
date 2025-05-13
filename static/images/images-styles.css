@@ -19,6 +19,15 @@ background: #003c8f;
 background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 .box-container {
   display: flex;
   justify-content: center;
@@ -83,6 +92,7 @@ background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1)
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 80px;
 }
 
 .image-grid {
@@ -125,8 +135,7 @@ background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1)
 
 /* Footer */
 .footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
     text-align: center;
     font-size: 12px;

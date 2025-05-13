@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="upload-page-styles.css" />
-  <title>страница загрузки</title>
+<head>    <meta charset="UTF-8" />    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <link rel="stylesheet" href="upload-page-styles.css" />   <title>страница загрузки</title>
 </head>
 <body>
   <header class="main-header">
@@ -18,11 +14,10 @@
 
   <main>
     <section id="upload">
-          <div>
-      <button id="btnGoToImages" class="hero-button">галерея</button>
-    </div>
+      <div>
+        <button onclick="location.href='/images'" id="btnGoToImages" class="hero-button">галерея</button>
+      </div>
       <h1>👇 загружай изображение 👇</h1>
-
       <div class="upload-area" id="drop-area" ondrop="handleFiles(event.dataTransfer.files)">
         <div class="container preview">
           <p>ты еще ничего не выбрал :(</p>

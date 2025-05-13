@@ -54,10 +54,10 @@ function setImages(images) {
         });
     };
 
-    const btnDowload = document.createElement("button");
-    btnDowload.textContent = "Загрузить";
-    btnDowload.className = "btn btn-secondary me-2 btn-sm px-2";
-    btnDowload.onclick = () => {
+    const btnDownload = document.createElement("button");
+    btnDownload.textContent = "Загрузить";
+    btnDownload.className = "btn btn-secondary me-2 btn-sm px-2";
+    btnDownload.onclick = () => {
       const link = document.createElement("a");
       link.href = `/images/${fullImageName}`;
       link.download = fullImageName;
@@ -67,7 +67,7 @@ function setImages(images) {
     };
 
     buttonDivEl.appendChild(btnCopyLink);
-    buttonDivEl.appendChild(btnDowload);
+    buttonDivEl.appendChild(btnDownload);
   });
 }
 
