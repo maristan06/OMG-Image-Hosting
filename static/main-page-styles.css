@@ -23,13 +23,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("/pics/main_bg.png");
+    background: #34008f;
+    background: linear-gradient(90deg,rgba(52, 0, 143, 1) 0%, rgba(224, 94, 192, 1) 50%, rgba(186, 240, 247, 1) 100%);
+    background-image: url("./main_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background: #34008f;
-    background: linear-gradient(90deg,rgba(52, 0, 143, 1) 0%, rgba(224, 94, 192, 1) 50%, rgba(186, 240, 247, 1) 100%);
+
 }
 
 .container {
@@ -82,7 +83,7 @@ body {
     padding: 30px;
     border: 2px solid white;
     border-top-left-radius: 50px;
-    background-image: url("/pics/pink_logo.jpg");
+    background-image: url("./pink_logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -12,11 +12,10 @@
 body {
   font-family: Rubik, sans-serif;
   color: #333;
-  background: url("../pics/blue_bg.png") center/cover fixed no-repeat;
+  background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
+  background: url("../blue_bg.png") center/cover fixed no-repeat;
   text-align: center;
   padding: 20px;
-  background: #003c8f;
-background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
 }
 
 .box-container {
@@ -31,7 +30,7 @@ background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1)
   margin: 0 auto 20px;
   border: 2px solid white;
   border-top-left-radius: 50px;
-  background: url("../pics/blue_logo.png") center/cover no-repeat;
+  background: url("../blue_logo.png") center/cover no-repeat;
 }
 
 .tiltup {
@@ -49,8 +48,6 @@ background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1)
   opacity: 0.8;
 }
 
-/*-----------------------------------------------------------------******************************
-/* Image Table */
 table.table {
   width: 100%;
   border-collapse: collapse;
@@ -81,7 +78,6 @@ table.table {
   object-fit: cover;
 }
 
-/* Delete Button */
 .delete-btn {
   background: none;
   border: none;
@@ -93,8 +89,6 @@ table.table {
 .delete-btn:hover {
   transform: scale(1.2);
 }
-
-
 
 @media (max-width: 600px) {
   .table thead {

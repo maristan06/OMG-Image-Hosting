@@ -211,6 +211,7 @@ class ImageHostingHandler(BaseHTTPRequestHandler):
 
     def do_DELETE(self):
         delete_fullpath = self.path
+        logger.error(delete_fullpath)
         delete_path_chunks = delete_fullpath.partition("/api/delete/")
 
         if delete_path_chunks[1] in self.delete_routes:

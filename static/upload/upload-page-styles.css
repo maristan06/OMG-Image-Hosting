@@ -17,7 +17,9 @@
 
 html, body {
     height: 100%;
-    background-image: url("../pics/blue_bg.png");
+    background: #003c8f;
+    background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
+    background-image: url("../blue_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,8 +27,7 @@ html, body {
     display: flex;
     flex-direction: column;
 
-  background: #003c8f;
-background: linear-gradient(90deg,rgba(0, 60, 143, 1) 0%, rgba(212, 255, 230, 1) 50%, rgba(184, 213, 227, 1) 100%);
+
 }
 
 body {
@@ -39,23 +40,6 @@ body {
 main {
     flex: 1;
 }
-/*html, body {
-    height: 100%;
-    background-image: url("../pics/blue_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    color: #333;
-    text-align: center;
-  position: relative;
-  padding-bottom: 60px;
-}*/
 
 .main-header {
     display: flex;
@@ -88,7 +72,7 @@ body {
     padding: 30px;
     border: 2px solid white;
     border-top-left-radius: 50px;
-    background-image: url("../pics/blue_logo.png");
+    background-image: url("../blue_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -234,12 +218,3 @@ body {
     background-color: transparent;
     padding: 10px 0;
 }
-/*.footer {
-
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  background-color: transparent;
-  padding: 10px 0;
-}*/

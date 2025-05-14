@@ -17,7 +17,7 @@ function setImages(images) {
     const fullFileName = image.filename + image.file_type;
 
     deleteBtn.onclick = () => {
-      fetch(`/api/delete/${fullFileName}`, { method: "DELETE" })
+      fetch(`/api/delete/?image-name=${fullFileName}`, { method: "DELETE" })
         .then(() => loadImages(currentPage))
         .catch((error) => console.error(error));
     };

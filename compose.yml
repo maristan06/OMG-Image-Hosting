@@ -8,7 +8,7 @@ volumes:
 
 services:
   app:
-    container_name: app
+    container_name: app_maristan06_Final
     build: ./app
     ports:
       - "8000:8000"
@@ -22,7 +22,7 @@ services:
         condition: service_healthy
 
   nginx:
-    container_name: nginx
+    container_name: nginx_maristan06_Final
     image: nginx:latest
     restart: always
     command: nginx -g "daemon off;"
@@ -39,7 +39,7 @@ services:
       - app
 
   db:
-    container_name: db_ih
+    container_name: db_ih_maristan06_Final
     image: postgres:latest
     env_file:
       - ./app/.env
