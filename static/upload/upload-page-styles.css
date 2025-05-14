@@ -26,8 +26,6 @@ html, body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-
-
 }
 
 body {
@@ -36,6 +34,9 @@ body {
     flex: 1;
 }
 
+.main-page {
+    cursor: pointer;
+}
 
 main {
     flex: 1;

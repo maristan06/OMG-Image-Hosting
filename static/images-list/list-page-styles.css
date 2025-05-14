@@ -33,6 +33,9 @@ body {
   background: url("../blue_logo.png") center/cover no-repeat;
 }
 
+.main-page {
+    cursor: pointer;
+}
 .tiltup {
   color: var(--color-title);
   font-family: var(--font-title);
@@ -78,6 +81,7 @@ table.table {
   object-fit: cover;
 }
 
+
 .delete-btn {
   background: none;
   border: none;
@@ -89,6 +93,8 @@ table.table {
 .delete-btn:hover {
   transform: scale(1.2);
 }
+
+
 
 @media (max-width: 600px) {
   .table thead {
@@ -127,7 +133,7 @@ table.table {
     max-height: none;
   }
 }
-/* Footer */
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -138,7 +144,6 @@ table.table {
     padding: 10px 0;
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;

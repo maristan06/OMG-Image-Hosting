@@ -26,6 +26,10 @@ html, body {
   flex-direction: column;
 }
 
+.main-page {
+    cursor: pointer;
+}
+
 main {
   flex: 1;
 }
